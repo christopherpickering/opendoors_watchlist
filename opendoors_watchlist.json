@@ -2,7 +2,6 @@
     "Afghanistan": {
         "name": "Afghanistan",
         "rank": "1",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "98.33",
@@ -19,7 +18,6 @@
     "North Korea": {
         "name": "North Korea",
         "rank": "2",
-        "source": "communist-and-post-communist-oppression",
         "region": "Asia",
         "religion": "Agnosticism",
         "score": "96.48",
@@ -36,7 +34,6 @@
     "Somalia": {
         "name": "Somalia",
         "rank": "3",
-        "source": "clan-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "91.43",
@@ -53,7 +50,6 @@
     "Libya": {
         "name": "Libya",
         "rank": "4",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "90.93",
@@ -70,7 +66,6 @@
     "Yemen": {
         "name": "Yemen",
         "rank": "5",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "88.26",
@@ -87,7 +82,6 @@
     "Eritrea": {
         "name": "Eritrea",
         "rank": "6",
-        "source": "dictatorial-paranoia",
         "region": "Africa",
         "religion": "Islam",
         "score": "87.52",
@@ -104,7 +98,6 @@
     "Nigeria": {
         "name": "Nigeria",
         "rank": "7",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Christianity",
         "score": "87.43",
@@ -121,7 +114,6 @@
     "Pakistan": {
         "name": "Pakistan",
         "rank": "8",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "87.38",
@@ -138,7 +130,6 @@
     "Iran": {
         "name": "Iran",
         "rank": "9",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "85.31",
@@ -155,7 +146,6 @@
     "India": {
         "name": "India",
         "rank": "10",
-        "source": "religious-nationalism",
         "region": "Asia",
         "religion": "Hinduism",
         "score": "81.82",
@@ -172,7 +162,6 @@
     "Saudi Arabia": {
         "name": "Saudi Arabia",
         "rank": "11",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "80.89",
@@ -189,7 +178,6 @@
     "Myanmar": {
         "name": "Myanmar",
         "rank": "12",
-        "source": "religious-nationalism",
         "region": "Asia",
         "religion": "Buddhism",
         "score": "79.01",
@@ -206,7 +194,6 @@
     "Sudan": {
         "name": "Sudan",
         "rank": "13",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "79.00",
@@ -223,7 +210,6 @@
     "Iraq": {
         "name": "Iraq",
         "rank": "14",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "78.11",
@@ -240,7 +226,6 @@
     "Syria": {
         "name": "Syria",
         "rank": "15",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "77.58",
@@ -257,7 +242,6 @@
     "Maldives": {
         "name": "Maldives",
         "rank": "16",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "77.04",
@@ -274,7 +258,6 @@
     "China": {
         "name": "China",
         "rank": "17",
-        "source": "communist-and-post-communist-oppression",
         "region": "Asia",
         "religion": "Various",
         "score": "75.66",
@@ -291,7 +274,6 @@
     "Qatar": {
         "name": "Qatar",
         "rank": "18",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "73.85",
@@ -308,7 +290,6 @@
     "Vietnam": {
         "name": "Vietnam",
         "rank": "19",
-        "source": "communist-and-post-communist-oppression",
         "region": "Asia",
         "religion": "Buddhism",
         "score": "70.94",
@@ -325,7 +306,6 @@
     "Egypt": {
         "name": "Egypt",
         "rank": "20",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "70.88",
@@ -342,7 +322,6 @@
     "Uzbekistan": {
         "name": "Uzbekistan",
         "rank": "21",
-        "source": "dictatorial-paranoia",
         "region": "Central Asia",
         "religion": "Islam",
         "score": "70.82",
@@ -359,7 +338,6 @@
     "Algeria": {
         "name": "Algeria",
         "rank": "22",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "70.53",
@@ -376,7 +354,6 @@
     "Mauritania": {
         "name": "Mauritania",
         "rank": "23",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "70.40",
@@ -393,7 +370,6 @@
     "Mali": {
         "name": "Mali",
         "rank": "24",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "69.53",
@@ -410,7 +386,6 @@
     "Turkmenistan": {
         "name": "Turkmenistan",
         "rank": "25",
-        "source": "dictatorial-paranoia",
         "region": "Central Asia",
         "religion": "Islam",
         "score": "68.96",
@@ -427,7 +402,6 @@
     "Laos": {
         "name": "Laos",
         "rank": "26",
-        "source": "communist-and-post-communist-oppression",
         "region": "Asia",
         "religion": "Buddhism",
         "score": "68.84",
@@ -444,7 +418,6 @@
     "Morocco": {
         "name": "Morocco",
         "rank": "27",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "68.63",
@@ -461,7 +434,6 @@
     "Indonesia": {
         "name": "Indonesia",
         "rank": "28",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "68.35",
@@ -478,7 +450,6 @@
     "Bangladesh": {
         "name": "Bangladesh",
         "rank": "29",
-        "source": "dictatorial-paranoia",
         "region": "Asia",
         "religion": "Islam",
         "score": "68.04",
@@ -495,7 +466,6 @@
     "Colombia": {
         "name": "Colombia",
         "rank": "30",
-        "source": "organized-crime-and-corruption",
         "region": "Latin America",
         "religion": "Christianity",
         "score": "67.69",
@@ -512,7 +482,6 @@
     "Central African Republic": {
         "name": "Central African Republic",
         "rank": "31",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Christianity",
         "score": "67.67",
@@ -529,7 +498,6 @@
     "Burkina Faso": {
         "name": "Burkina Faso",
         "rank": "32",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "67.65",
@@ -546,7 +514,6 @@
     "Niger": {
         "name": "Niger",
         "rank": "33",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "67.54",
@@ -563,7 +530,6 @@
     "Bhutan": {
         "name": "Bhutan",
         "rank": "34",
-        "source": "religious-nationalism",
         "region": "Asia",
         "religion": "Buddhism",
         "score": "66.71",
@@ -580,7 +546,6 @@
     "Tunisia": {
         "name": "Tunisia",
         "rank": "35",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Islam",
         "score": "66.31",
@@ -597,7 +562,6 @@
     "Oman": {
         "name": "Oman",
         "rank": "36",
-        "source": "clan-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "66.06",
@@ -614,7 +578,6 @@
     "Cuba": {
         "name": "Cuba",
         "rank": "37",
-        "source": "dictatorial-paranoia",
         "region": "Latin America",
         "religion": "Christianity",
         "score": "66.052",
@@ -631,7 +594,6 @@
     "Ethiopia": {
         "name": "Ethiopia",
         "rank": "38",
-        "source": "denominational-protectionism",
         "region": "Africa",
         "religion": "Christianity",
         "score": "65.76",
@@ -648,7 +610,6 @@
     "Jordan": {
         "name": "Jordan",
         "rank": "39",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "65.68",
@@ -665,7 +626,6 @@
     "Democratic Republic of the Congo": {
         "name": "Democratic Republic of the Congo",
         "rank": "40",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Christianity",
         "score": "65.68",
@@ -682,7 +642,6 @@
     "Mozambique": {
         "name": "Mozambique",
         "rank": "41",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Christianity",
         "score": "64.98",
@@ -699,7 +658,6 @@
     "Turkey": {
         "name": "Turkey",
         "rank": "42",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "64.78",
@@ -716,7 +674,6 @@
     "Mexico": {
         "name": "Mexico",
         "rank": "43",
-        "source": "organized-crime-and-corruption",
         "region": "Latin America",
         "religion": "Christianity",
         "score": "64.77",
@@ -733,7 +690,6 @@
     "Cameroon": {
         "name": "Cameroon",
         "rank": "44",
-        "source": "islamic-oppression",
         "region": "Africa",
         "religion": "Christianity",
         "score": "64.63",
@@ -750,7 +706,6 @@
     "Tajikistan": {
         "name": "Tajikistan",
         "rank": "45",
-        "source": "dictatorial-paranoia",
         "region": "Central Asia",
         "religion": "Islam",
         "score": "64.62",
@@ -767,7 +722,6 @@
     "Brunei": {
         "name": "Brunei",
         "rank": "46",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "64.28",
@@ -784,7 +738,6 @@
     "Kazakhstan": {
         "name": "Kazakhstan",
         "rank": "47",
-        "source": "dictatorial-paranoia",
         "region": "Central Asia",
         "religion": "Islam",
         "score": "63.90",
@@ -801,7 +754,6 @@
     "Nepal": {
         "name": "Nepal",
         "rank": "48",
-        "source": "religious-nationalism",
         "region": "Asia",
         "religion": "Hinduism",
         "score": "63.60",
@@ -818,7 +770,6 @@
     "Kuwait": {
         "name": "Kuwait",
         "rank": "49",
-        "source": "islamic-oppression",
         "region": "Middle East",
         "religion": "Islam",
         "score": "63.57",
@@ -835,7 +786,6 @@
     "Malaysia": {
         "name": "Malaysia",
         "rank": "50",
-        "source": "islamic-oppression",
         "region": "Asia",
         "religion": "Islam",
         "score": "63.45",
