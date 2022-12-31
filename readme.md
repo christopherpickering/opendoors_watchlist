@@ -1,4 +1,4 @@
-# CIA World Factbook
+# Open Doors Persecution Watchlist
 
 Converts the [Open Doors persecution watchlist](https://www.opendoorsusa.org/christian-persecution/world-watch-list/) into a json data structure.
 
@@ -10,7 +10,8 @@ Converts the [Open Doors persecution watchlist](https://www.opendoorsusa.org/chr
 ## Building your own file
 
 * clone this repository
-* run `python watchlist.py`
+* install deps with `poetry install`
+* run `poetry run python watchlist.py`
 
 A json file called `opendoors_watchlist.json` will appear.
 

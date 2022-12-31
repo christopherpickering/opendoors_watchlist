@@ -33,7 +33,6 @@ for country in links:
     OUT[country.get("data-country")] = {
       "name": country.get("data-country"),
       "rank": country.get("data-rank"),
-      "source": country.get("data-source"),
       "region": soup.find("span",text="Region").find_next_sibling().text.strip(),
       "religion": soup.find("span",text="Religion").find_next_sibling().text.strip(),
       "score": soup.find("span",text="Score").find_next_sibling().text.strip(),
