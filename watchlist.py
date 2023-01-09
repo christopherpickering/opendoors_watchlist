@@ -4,7 +4,7 @@ import os
 import shutil
 from bs4 import BeautifulSoup
 import requests
-
+import re
 BASE_URL = "https://www.opendoorsus.org/en-US"
 
 
@@ -14,19 +14,58 @@ OUT = {}
 # get country urls
 p = requests.get(f"{BASE_URL}/persecution/countries/")
 
-with open("data/index.html", "w") as outfile:
-    outfile.write(p.text)
+# with open("data/index.html", "w") as outfile:
+#     outfile.write(p.text)
 
 soup = BeautifulSoup(p.text, "html.parser")
 links = soup.find_all('a', class_="view-more", href=True)
 
-print(links)
-# page_json = p.json()
+# print(links)
 
-# results = page_json["result"]["data"]["countries"]["edges"]
+# get meta from main page.. half is there and half in the details. not
+# much overlap.
 
-# # iterate countries and get the region
-for country in links[:5]:
+countries = soup.find_all('a', attrs={'xlink:href':"#"})
+for country in countries:
+    data = country.find('path')
+
+    v_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"Violence\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    v = v_re.group(1) if v_re else ""
+
+    cl_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"Church Life\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    cl = cl_re.group(1) if cl_re else ""
+
+    nl_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"National Life\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    nl = nl_re.group(1) if nl_re else ""
+
+    coml_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"Community Life\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    coml = coml_re.group(1) if coml_re else ""
+
+    fl_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"Family Life\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    fl = fl_re.group(1) if fl_re else ""
+
+    pl_re = re.search(rf"mapData\[2022\]\[\"{data.get('data-name')}\"\]\[\"Private Life\"\]\s*?=\s*?(.+?);",p.text, re.I)
+    pl = pl_re.group(1) if pl_re else ""
+
+    OUT[data.get('data-name')] = {
+      "name": data.get('data-name').strip(),
+      "rank": data.get('data-rank').strip(),
+      "religion": data.get('data-religion').strip(),
+      "government": data.get("data-government").strip(),
+      "christians": data.get('data-christians').strip(),
+      "violence":v,
+      "church_life": cl,
+      "national_life":nl,
+      "community_life":coml,
+      "family_life":fl,
+      "private_life":pl,
+    }
+
+
+# print(links)
+
+# iterate countries and get the region
+for country in links:
     print(country.get('href'))
     d = requests.get(f"{BASE_URL}{country.get('href')}")
 
@@ -36,21 +75,10 @@ for country in links[:5]:
         print("skipping")
         continue
 
-    OUT[soup.find("h1").text.strip()] = {
-      "name": soup.find("h1").text.strip(),
-      "rank": soup.find("span", class_="wwl-country__ranking").text.strip(),
-      "religion": soup.find("h6",text="Main Religion").find_next_sibling().text.strip(),
-      "score": soup.find("h6",text="Persecution Level").find_next_sibling().text.strip(),
-      "persecution_type": soup.find("h6",text="Persecution Type").find_next_sibling().text.strip(),
-      # "violence":soup.find("td",text="Violence").find_next_sibling().text.strip(),
-      # "church_life":soup.find("td",text="Church Life").find_next_sibling().text.strip(),
-      # "national_life":soup.find("td",text="National Life").find_next_sibling().text.strip(),
-      # "community_life":soup.find("td",text="Community Life").find_next_sibling().text.strip(),
-      # "family_life":soup.find("td",text="Family Life").find_next_sibling().text.strip(),
-      # "private_life":soup.find("td",text="Private Life").find_next_sibling().text.strip(),
-      "details":soup.find("div",class_="wwl-country__body").text.strip(),
-      "url": BASE_URL+country.get('href')
-    }
+    OUT[soup.find("h1").text.strip()]["persecution_type"] =  soup.find("h6",text=re.compile(r'Persecution Type|Main threat')).find_next_sibling().text.strip()
+    OUT[soup.find("h1").text.strip()]["details"] = soup.find("div",class_="wwl-country__body").text.strip()
+    OUT[soup.find("h1").text.strip()]["url"] = BASE_URL+country.get('href')
+    
     # break
 
 if not os.path.isdir("data"):
