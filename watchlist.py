@@ -66,7 +66,7 @@ for country in countries:
 
 # iterate countries and get the region
 for country in links:
-    print(country.get('href'))
+    print(BASE_URL + country.get('href'))
     d = requests.get(f"{BASE_URL}{country.get('href')}")
 
     soup = BeautifulSoup(d.text, "html.parser")
@@ -75,7 +75,11 @@ for country in links:
         print("skipping")
         continue
 
-    OUT[soup.find("h1").text.strip()]["persecution_type"] =  soup.find("h6",text=re.compile(r'Persecution Type|Main threat')).find_next_sibling().text.strip()
+    # they have broken html somtimes.
+    ptype = soup.find("h6",text=re.compile(r'Persecution Type|Main threat'))
+    if ptype:
+        OUT[soup.find("h1").text.strip()]["persecution_type"] = ptype.find_next_sibling().text.strip()
+
     OUT[soup.find("h1").text.strip()]["details"] = soup.find("div",class_="wwl-country__body").text.strip()
     OUT[soup.find("h1").text.strip()]["url"] = BASE_URL+country.get('href')
     
