@@ -10,8 +10,8 @@ Converts the [Open Doors persecution watchlist](https://www.opendoorsusa.org/chr
 ## Building your own file
 
 * clone this repository
-* install deps with `poetry install`
-* run `poetry run python watchlist.py`
+* install deps with `pip install -r requirements.txt`
+* run `python watchlist.py`
 
 A json file called `opendoors_watchlist.json` will appear.
 
